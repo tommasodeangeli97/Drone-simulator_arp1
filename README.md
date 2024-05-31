@@ -21,5 +21,6 @@ QUIT 'q'
 ```
 
 ## Architecture
+![Slide1](https://github.com/tommasodeangeli97/Drone-simulator_arp1/assets/92479113/bb67539f-e2b3-4413-9e59-c29798f91502)
 
-[structure arp1.pdf](https://github.com/user-attachments/files/15511423/structure.arp1.pdf)
+
