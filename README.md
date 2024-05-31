@@ -7,7 +7,8 @@ The final result gives to the user the possibility to move a drone in a free env
 Furthermore the drone is unable to go out the screen.
 
 These are the key to control the robot, however the `master` process visualises them befor starting the application:
-`UP 'e'
+```
+UP 'e'
 UP_LEFT 'w'
 UP_RIGHT 'r'
 RIGHT 'f'
@@ -16,4 +17,5 @@ LEFT 's'
 DOWN 'c'
 DOWN_LEFT 'x'
 DOWN_RIGHT 'v'
-QUIT 'q`'
+QUIT 'q'
+```
