@@ -23,4 +23,14 @@ QUIT 'q'
 ## Architecture
 ![Slide1](https://github.com/tommasodeangeli97/Drone-simulator_arp1/assets/92479113/bb67539f-e2b3-4413-9e59-c29798f91502)
 
+The structure is given by five processes:
 
+1: **master** -> The process that forks all the others and sends the pids to the watchdog; it gives to the user the information to use properly the application
+
+2: **server** -> The main process, with pipe it gives to the *drone* process the maximum coordinates reaceble for the drone; it recieves from the shared memory the update position of the drone; it creates the window where the drone moves and visualizes the application
+
+3: **keyboard** -> The process that takes the input from the user; it updates the shared memory with the values of the forces acting on the drone
+
+4: **drone** -> The process that controls in fact the drone; it recieves the maximum coordinates from the pipe; it reads from the shared memory the values of the forces and compute the acceleration, the velocity and at the end the new position of the drone, these last information is shared in the shared memory
+
+5: **watchdog** -> This is a control process that verifies if all the other processes are running without errors
