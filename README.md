@@ -1,2 +1,10 @@
 # Drone-simulator_arp1
-A drone controlled by forces created in c language using ncurses
+First assignment of Advanced and Robot Programming: is a drone simulator implemented totally in c language and controllable in forces; using the key inputs the user is capable to apply different forces to drone and see it moving, the application calculates the acceleration, the velocity and the position od the drone and shows it using the ncurses library.
+
+## Description
+The application consists in five differet processes that collaborates in real time using shared memory and pipes and two files, one for the possible errors and the other that describe the routine of the program.
+The final result gives to the user the possibility to move a drone in a free environment where only the friction force and the forces intruduced to control it are acting.
+Furthermore the drone is unable to go out the screen.
+
+These are the key to control the robot, however the `master` process visualises them befor starting the application:
+
