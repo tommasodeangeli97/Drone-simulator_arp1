@@ -73,5 +73,6 @@ In the next assignment it will be more processes and the application will be mor
 3. For the user point of view a special window can be impleted to avoid the closure of the application if the 'q' button is accidentally pressed
 
 ## Author and contact
-Author: Tommaso De Angeli (
+Author: Tommaso De Angeli (https://github.com/tommasodeangeli97)
+
 contact: tommaso.deangeli.97@gmail.com
