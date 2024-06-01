@@ -71,3 +71,7 @@ In the next assignment it will be more processes and the application will be mor
 2. The drone could be further impruved to make it capable to rotate on itself
 
 3. For the user point of view a special window can be impleted to avoid the closure of the application if the 'q' button is accidentally pressed
+
+## Author and contact
+Author: Tommaso De Angeli (
+contact: tommaso.deangeli.97@gmail.com
