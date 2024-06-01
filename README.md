@@ -25,15 +25,15 @@ QUIT 'q'
 
 The structure is given by five processes:
 
-1: **master** -> The process that forks all the others and sends the pids to the watchdog; it gives to the user the information to use properly the application
+1. **master** -> The process that forks all the others and sends the pids to the watchdog; it gives to the user the information to use properly the application
 
-2: **server** -> The main process, with pipe it gives to the *drone* process the maximum coordinates reachable for the drone; it recieves from the shared memory the update position of the drone; it creates the window where the drone moves and visualizes the application
+2. **server** -> The main process, with pipe it gives to the *drone* process the maximum coordinates reachable for the drone; it recieves from the shared memory the update position of the drone; it creates the window where the drone moves and visualizes the application
 
-3: **keyboard** -> The process that takes the input from the user; it updates the shared memory with the values of the forces acting on the drone
+3. **keyboard** -> The process that takes the input from the user; it updates the shared memory with the values of the forces acting on the drone
 
-4: **drone** -> The process that controls in fact the drone; it recieves the maximum coordinates from the pipe; it reads from the shared memory the values of the forces and compute the acceleration, the velocity and at the end the new position of the drone, these last information is shared in the shared memory
+4. **drone** -> The process that controls in fact the drone; it recieves the maximum coordinates from the pipe; it reads from the shared memory the values of the forces and compute the acceleration, the velocity and at the end the new position of the drone, these last information is shared in the shared memory
 
-5: **watchdog** -> This is a control process that verifies if all the other processes are running without errors
+5. **watchdog** -> This is a control process that verifies if all the other processes are running without errors
 
 ## Installation
 To properly install the application assure you to have installe *konsole* and *ncurses* on your computer
@@ -44,7 +44,7 @@ $ sudo apt install libncurses-dev
 
 then clone the repository on your pc
 ```
-$ git clone 
+$ git clone https://github.com/tommasodeangeli97/Drone-simulator_arp1.git
 ```
 
 by the *konsole* terminal go inside the folder
@@ -62,3 +62,12 @@ now you are able to start the application
 ```
 $ ./master
 ```
+
+## Possible implementations
+In the next assignment it will be more processes and the application will be more complete however even talking to this specific project some implementation could be done:
+
+1. Even if it is not possible in reality could be implemented a instant block of the robot, a key to stops the robot regardless of the forces applied and the velocity accumulated
+
+2. The drone could be further impruved to make it capable to rotate on itself
+
+3. For the user point of view a special window can be impleted to avoid the closure of the application if the 'q' button is accidentally pressed
