@@ -35,6 +35,13 @@ The structure is given by five processes:
 
 5. **watchdog** -> This is a control process that verifies if all the other processes are running without errors
 
+## Overview
+
+
+https://github.com/tommasodeangeli97/Drone-simulator_arp1/assets/92479113/dbbe9b3a-5e20-43e8-9918-f4717fbc5943
+
+
+
 ## Installation
 To properly install the application assure you to have installe *konsole* and *ncurses* on your computer
 ```
